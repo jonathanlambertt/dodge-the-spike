@@ -1,7 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://src/assets/Poppins-Regular.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://src/menus/HUD.gd" type="Script" id=2]
+[ext_resource path="res://src/assets/fonts/Poppins-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/menus/hud/HUD.gd" type="Script" id=2]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 45
