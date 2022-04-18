@@ -12,6 +12,10 @@ func _on_Coin_collected():
     player.increase_score()
     hud.update_score(player.score)
 
-# add enemy effect when player score reaches a multiple of 10
+# run enemy effect when player score reaches a certain effect score
 func _on_Player_score_reached():
     enemy.set_random_direction()
+
+func _on_Enemy_game_over():
+    get_node("/root/Global").score = player.score
+    get_tree().change_scene("res://src/menus/GameOver.tscn")

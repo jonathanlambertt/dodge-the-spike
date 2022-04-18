@@ -14,6 +14,10 @@ config/name="DodgeTheSpike"
 run/main_scene="res://src/Game.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://src/Global.gd"
+
 [display]
 
 window/size/width=904
@@ -50,7 +54,3 @@ right={
 [physics]
 
 common/enable_pause_aware_picking=true
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
