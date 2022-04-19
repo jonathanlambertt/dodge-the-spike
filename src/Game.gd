@@ -15,7 +15,8 @@ func _on_Coin_collected():
 # run enemy effect when player score reaches a certain effect score
 func _on_Player_score_reached():
     enemy.set_random_direction()
-
-func _on_Enemy_game_over():
-    get_node("/root/Global").score = player.score
-    get_tree().change_scene("res://src/menus/GameOver.tscn")
+    
+func _on_game_over():
+    var error = get_tree().change_scene("res://src/menus/game_over/GameOver.tscn")
+    if error != OK:
+        push_error(error)

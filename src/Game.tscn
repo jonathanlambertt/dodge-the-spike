@@ -4,7 +4,7 @@
 [ext_resource path="res://src/entities/enemy/Enemy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/entities/coin/Coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Game.gd" type="Script" id=4]
-[ext_resource path="res://src/menus/hud/HUD.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/ui/hud/HUD.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 452, 8 )
@@ -81,5 +81,5 @@ shape = SubResource( 4 )
 
 [connection signal="collected" from="Coin" to="." method="_on_Coin_collected"]
 [connection signal="score_reached" from="Player" to="." method="_on_Player_score_reached"]
-[connection signal="game_over" from="Enemy" to="." method="_on_Enemy_game_over"]
+[connection signal="game_over" from="Enemy" to="." method="_on_game_over"]
 [connection signal="timeout" from="EnemyWait" to="." method="_on_EnemyWait_timeout"]

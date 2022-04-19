@@ -16,7 +16,7 @@ func _ready():
 
 func _physics_process(_delta):
     player_move()
-    move_and_slide(velocity)
+    var _velocity = move_and_slide(velocity)
 
 func player_move():
     if Input.is_action_pressed("up"):
@@ -36,6 +36,7 @@ func player_move():
 
 func increase_score():
     score += 1
+    get_node("/root/Global").score = score
     check_score()
 
 func check_score():

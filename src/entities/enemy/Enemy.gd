@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
+signal game_over
+
 var velocity = Vector2(0, 0)
 var screen_size
 
 const SPEED = 650
-
-signal game_over
 
 func _ready():
     screen_size = get_viewport_rect().size
