@@ -1,6 +1,6 @@
 extends Control
 
-onready var score_label = get_node("CenterContainer/VBoxContainer/Score")
+onready var score_label = get_node("CenterContainer/VBoxContainer/HBoxContainer/Score")
 
 func _ready():
     score_label.text = str(get_node("/root/Global").score)
