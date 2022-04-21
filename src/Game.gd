@@ -14,6 +14,7 @@ func _on_Coin_collected():
 
 # run enemy effect when player score reaches a certain effect score
 func _on_Player_score_reached():
+    print(enemy.get_velocity())
     enemy.set_random_direction()
     
 func _on_game_over():

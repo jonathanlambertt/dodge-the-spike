@@ -23,3 +23,6 @@ func set_random_direction():
     var rand_x = [1, -1][randi() % 2]
     var rand_y = [1, -1][randi() % 2]
     velocity = Vector2(rand_x, rand_y)
+
+func get_velocity():
+    return velocity
