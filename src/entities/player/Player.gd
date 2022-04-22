@@ -8,6 +8,7 @@ var velocity = Vector2(0, 0)
 var screen_size
 var score = 0
 var _effect_score = 5
+
 onready var player_sprite = get_node("Sprite")
 
 func _ready():
