@@ -3,7 +3,6 @@
 [ext_resource path="res://src/assets/fonts/Poppins-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://src/ui/hud/HUD.gd" type="Script" id=2]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 45
 font_data = ExtResource( 1 )
@@ -17,24 +16,25 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.305882, 0.305882, 0.847059, 1 )
+
 [node name="Score" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 15.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "0"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Ready" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 70.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "Get ready!"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
